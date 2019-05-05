@@ -1,4 +1,152 @@
 body {
-  background-color: red;
+  background-color: #f0f0f0;
+  width: 100%;
+  color: #2c2c2c;
+}
+
+@media (min-width: 480px) {
+  body {
+    border-radius: 5px;
+    border-width: 1px;
+    margin: 5%;
+    margin-top: 0;
+    width: 90%;
+    background-color: #e5e5e5;
+    -webkit-box-shadow: 1px 1px 15px gray;
+            box-shadow: 1px 1px 15px gray;
+  }
+}
+
+.my-pic {
+  width: 100%;
+  padding: 70px 150px 70px 150px;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  -webkit-clip-path: ellipse(70% 55% at 50% 35%);
+          clip-path: ellipse(70% 55% at 50% 35%);
+  background-color: #fafafa;
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+
+.my-pic .display-4 {
+  font-size: 30px;
+}
+
+.my-pic .lead {
+  font-size: 16px;
+}
+
+.my-pic img {
+  width: 240px;
+  height: 240px;
+  border-style: solid;
+  border-width: 10px;
+  border-color: white;
+  -webkit-box-shadow: 1px 1px 10px gray;
+          box-shadow: 1px 1px 10px gray;
+}
+
+@media (max-width: 480px) {
+  .my-pic img {
+    border-width: 5px;
+    border-color: white;
+    -webkit-box-shadow: 1px 1px 10px lightgray;
+            box-shadow: 1px 1px 10px lightgray;
+  }
+}
+
+.my-pic blockquote {
+  padding: 15px;
+}
+
+.my-pic .text-muted {
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.my-pic .display-4 {
+  font-size: 24px;
+}
+
+@media (max-width: 480px) {
+  .my-pic {
+    padding: 30px 30px 50px 30px;
+    padding-bottom: 10px;
+    background-color: #fafafa;
+    -webkit-clip-path: ellipse(90% 55% at 50% 40%);
+            clip-path: ellipse(90% 55% at 50% 40%);
+  }
+}
+
+.about-me {
+  width: 100%;
+  padding: 70px 150px 70px 150px;
+  text-align: justify;
+  color: #fafafa;
+  background-color: #395da0;
+  padding: 50px 150px 40px 150px;
+}
+
+.about-me .display-4 {
+  font-size: 30px;
+}
+
+.about-me .lead {
+  font-size: 16px;
+}
+
+@media (max-width: 480px) {
+  .about-me {
+    padding: 50px 30px;
+    text-align: left;
+  }
+}
+
+.expertise {
+  width: 100%;
+  padding: 70px 150px 70px 150px;
+  background-color: #fafafa;
+  padding: 50px 150px;
+}
+
+.expertise .display-4 {
+  font-size: 30px;
+}
+
+.expertise .lead {
+  font-size: 16px;
+}
+
+.expertise .row {
+  text-align: center;
+}
+
+.expertise img {
+  color: #395da0;
+  width: 100px;
+  height: 100px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 480px) {
+  .expertise {
+    padding: 50px 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .display-4 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .lead {
+    font-size: 16px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

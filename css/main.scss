@@ -1,4 +1,140 @@
+$mobile-width: 480px;
+
+@mixin mobile {
+  @media ( max-width: #{$mobile-width} ) {
+    @content
+  }
+}
+
+@mixin desktop {
+  @media ( min-width: #{$mobile-width} ) {
+    @content
+  }
+}
+
+@mixin content-base() {
+  width: 100%;
+  padding: 70px 150px 70px 150px; // top right bottom left
+  .display-4 {
+    font-size: 30px;
+  }
+
+  .lead {
+    font-size: 16px;
+  }
+}
 
 body {
-  background-color: red;
+  background-color: rgb(240, 240, 240);
+  width: 100%;
+  color: rgb(44, 44, 44) ;
+
+  @include desktop {
+    border-radius: 5px;
+    border-width: 1px;
+    margin: 5%;
+    margin-top: 0;
+    width: 90%;
+    background-color: #e5e5e5;
+    box-shadow: 1px 1px 15px rgb(128, 128, 128);
+  }
 }
+
+.my-pic {
+  @include content-base();
+
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  clip-path: ellipse(70% 55% at 50% 35%);
+  background-color: rgb(250, 250, 250);
+  padding-top: 25px;
+  padding-bottom: 20px;
+
+  img {
+    width: 240px;
+    height: 240px;
+    border-style: solid;
+    border-width: 10px;
+    border-color: white;
+    box-shadow: 1px 1px 10px gray;
+
+    @include mobile {
+      border-width: 5px;
+      border-color: white;
+      box-shadow: 1px 1px 10px lightgray
+    }
+  }
+
+  blockquote {
+    padding: 15px;
+  }
+
+  .text-muted {
+    font-weight: 300;
+    font-size: 16px;
+  }
+
+  .display-4 {
+    font-size: 24px;
+  }
+
+  @include mobile {
+    padding: 30px 30px 50px 30px;
+    padding-bottom: 10px;
+    background-color: rgb(250, 250, 250);
+    clip-path: ellipse(90% 55% at 50% 40%);
+  }
+}
+
+.about-me {
+  @include content-base();
+  text-align: justify;
+
+  color: rgb(250, 250, 250);
+  background-color: #395da0;
+  // background-color: rgb(240, 240, 240);
+  padding: 50px 150px 40px 150px;
+
+  @include mobile {
+    padding: 50px 30px;
+    text-align: left;
+  }
+}
+
+.expertise {
+  @include content-base();
+
+  background-color: rgb(250, 250, 250);
+  padding: 50px 150px;
+
+  .row {
+    text-align: center;
+  }
+
+  img {
+    color: #395da0;
+    width: 100px;
+    height: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  @include mobile {
+    padding: 50px 30px;
+  }
+}
+
+.display-4 {
+  @include mobile {
+    font-size: 30px;
+  }
+}
+
+.lead {
+  @include mobile {
+    font-size: 16px;
+  }
+}
+

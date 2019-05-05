@@ -1,23 +1,84 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Luqman Yusof</title>
+</head>
+
+<body>
+  <div class="my-pic">
+    <img src="me.jpg" class="rounded-circle">
+    <blockquote class="blockquote text-center">
+      <p class="mb-0">Luqman Hakim Yusof</p>
+      <footer class="text-muted">Software & Embedded System Developer</footer>
+    </blockquote>
+  </div>
+
+  <div class="about-me">
+    <h2 class="display-4">About Me</h2>
+    <p class="lead">
+      I started my carier in 2011 as PCB Designer at Freescale Semiconductor Malaysia couple months after finishing my 
+      Mechatronic Engineering Diploma. Almost 2 years later, I saw an oppurnity to start business focusing on electronic hardware development.
+      Handling client's requirement has made me learned a lot of technical stuff which is out of my education background. 
+      I thought myself computer, mobile and web application development. Due to my interest and talent in software developement, 
+      in 2012 I further my education journey at Universiti Teknologi Malaysia (KL Campus) in Software Engineering as part time student.
+      With almost a decade of experience I always try to find a way to improve my skill set either in technical or entreprenuership. 
+    </p>
+  </div>
+
+  <div class="expertise">
+    <h2 class="display-4">Technical Expertise</h2>
+    <p></p>
+    <div class="row">
+      <div class="col-lg-4">
+        <img src="coding.svg">
+        <p class="lead">Application development covering desktop, mobile & web Development.</p>
+      </div>
+      <div class="col-lg-4">
+          <img src="chip.svg">
+        <p class="lead">IoT firmware development for variuos microcontroller such as ESP32, ESP8266 & Microchip / Atmel.</p>
+      </div>
+      <div class="col-lg-4">
+          <img src="circuit-board.svg">
+        <p class="lead">Electronic circuit developement including process of requirement-specification matching, capturing schematic
+          & PCB design.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
 
+<script>
+  $(document).ready(() => {
+    var toggleCursor = true;
+    setInterval(() => {
+      if (toggleCursor) {
+        $('#cursor').show();
+      } else {
+        $('#cursor').hide();
+      }
+      toggleCursor = !toggleCursor;
+    }, 500)
+  });
+</script>
