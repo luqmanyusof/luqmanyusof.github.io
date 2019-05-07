@@ -179,6 +179,7 @@ body {
 @media (max-width: 480px) {
   .tools {
     padding: 50px 30px;
+    padding-top: 10px;
   }
 }
 
@@ -196,5 +197,11 @@ body {
 
 .devicon {
   font-size: 100px;
+}
+
+@media (max-width: 480px) {
+  .devicon {
+    font-size: 50px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
