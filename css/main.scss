@@ -15,6 +15,7 @@ $mobile-width: 480px;
 @mixin content-base() {
   width: 100%;
   padding: 70px 150px 70px 150px; // top right bottom left
+
   .display-4 {
     font-size: 30px;
   }
@@ -35,8 +36,9 @@ body {
     margin: 10%;
     margin-top: 2%;
     width: 80%;
-    background-color: #e5e5e5;
-    box-shadow: 1px 1px 15px rgb(128, 128, 128);
+    background-color: rgb(240, 240, 240);
+    // background-color: #395da0;
+    box-shadow: 1px 1px 10px rgb(120, 120, 120);
   }
 }
 
@@ -102,7 +104,7 @@ body {
 
   @include mobile {
     padding: 50px 30px;
-    text-align: left;
+    text-align: center;
   }
 }
 
@@ -176,7 +178,7 @@ body {
 .devicon {
   font-size: 100px;
   @include mobile {
-    font-size: 50px;
+    font-size: 45px;
   }
 }
 
